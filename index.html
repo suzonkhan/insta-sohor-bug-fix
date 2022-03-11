@@ -84,18 +84,50 @@
                 <div class="qa-block">
                     <h3>How does JavaScript work?</h3>
                     <p><strong>Answer:</strong>
-                        JavaScript is a scripting language. It’s also a high-level, dynamic typing, run-time complied, single threat programing language. Different browser using different engine to render JavaScript code into their browser.  At Google Chrome browser and node JS, JavaScript work by help with V8 engine. To render any JavaScript code into this browser, they are following this process - 
+                        JavaScript is a scripting language. It’s also a high-level, dynamic typing, run-in-time complied, single threat programing language. Different browser using different engine to render JavaScript code into their browser.  At Google Chrome browser and node JS, JavaScript work by help with V8 engine. To render any JavaScript code into this browser, they are following this process - 
                     </p>
-                    <p><strong>Source code => Parser => Abstract Syntax Tree => Interpreter Ignition => Bytecode.</strong></p>
+                    <p><strong>Javascript Source code => Parser => Abstract Syntax Tree => Interpreter Ignition => Bytecode.</strong></p>
                     <p>V8 engine also use another just-in-time compiler to run and execute JavaScript code within short time and efficiently. </p>
-                    <p class="align-center"><img  src="https://i0.wp.com/softwareengineeringdaily.com/wp-content/uploads/2018/10/jsengine-buildingblocks.jpg?ssl=1" alt="">
-                    
-                    </p>
+                     
+                </div>
+                <!-- qa-block -->
+                <div class="qa-block">
+                    <h3>How does JavaScript work?</h3>
+                    <p><strong>Answer:</strong>
+                       <p>As we know JavaScript is a single-threaded programming language. That’s why JavaScript can't work/execute multitask at same time.  Also we know V8 engine help to execute JavaScript code into google chrome browser and node JS. Into this V8 engine its have two part (a) Heap  (b) Call Stack.</p>
+                       <p>At run time our all JS code store into Call Stack and codes are executing here one by one. </p>
+                       <p>If call stack get any Asynchronous event then he send it (Asynchronous event) to Queue and execute rest of synchronous event. after completing all synchronous event execute from call stack event loop send rest of call back event from queue one by one. </p>
+                        
+                     
+                </div>
+                <!-- qa-block -->
+                <div class="qa-block">
+                    <h3>Difference between session storage and local storage</h3>
+                    <p><strong>Answer:</strong>
+                    <p>Most of case session storage and local storage are same. But we can find out some different between two and those difference are: </p>
+
+                      <p>Storage Capacity</p>
+                      <ul>
+                          <li><strong>Session storage:</strong> it can store 5MB data. </li>
+                          <li> <strong>Local storage:</strong> it can store 10MB/5MB data.</li>
+                      </ul>
+                      <p>Remove/Clear Data</p>
+                      <ul>
+                          <li><strong>Session storage:</strong> Its data clear/remove while closing browser. </li>
+                          <li> <strong>Local storage:</strong> Its  store data into browser memory and to clear/remove its data need to create an action by user.</li>
+                      </ul>
+                      <p>Working Area</p>
+                      <ul>
+                        <li><strong>Session storage:</strong> It works for certain browser tab. </li>
+                        <li> <strong>Local storage:</strong> Its works for all tab of this browser. </li>
+                    </ul>
+                       
                 </div>
                 <!-- qa-block -->
 
 
-                
+
+
             </div>
             <!-- container -->
         </section>
